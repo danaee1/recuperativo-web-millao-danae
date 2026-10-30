@@ -1,0 +1,125 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #263746;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #17324d, #247ba0);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #ffffff;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+nav a {
+    color: #17324d;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #269b9b;
+}
+
+/* Secciones */
+section {
+    padding: 40px 8%;
+    margin: 20px auto;
+}
+
+section h2 {
+    color: #17324d;
+    font-size: 28px;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 22px;
+    margin: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+article h3 {
+    color: #247ba0;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    background-color: #269b9b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #17324d;
+}
+
+/* Pie de página */
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Diseño adaptable a celulares */
+@media (max-width: 700px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 25px 6%;
+    }
+}
